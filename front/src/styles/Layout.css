@@ -1,0 +1,78 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.4rem;
+  background: rgba(255, 255, 255, 0.82);
+  border-bottom: 1px solid rgba(19, 138, 168, 0.14);
+  backdrop-filter: blur(14px);
+}
+
+.main-wrapper {
+  display: flex;
+  flex: 1; 
+}
+
+.sidebar {
+  width: 250px;
+  background: rgba(255, 255, 255, 0.74);
+  border-right: 1px solid rgba(19, 138, 168, 0.14);
+  padding: 1.25rem 1rem;
+  backdrop-filter: blur(14px);
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-bottom: 0.6rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #12313f;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 0.8rem;
+  border-radius: 12px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #0f6f89;
+  background: rgba(19, 138, 168, 0.08);
+}
+
+.content-body {
+  flex: 1; 
+  padding: 1.5rem;
+  background:
+    radial-gradient(circle at top left, rgba(19, 138, 168, 0.08), transparent 28%),
+    linear-gradient(180deg, #f8fcfd 0%, #eef8fb 100%);
+  overflow-y: auto;
+}
+
+.logout-btn {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  background: linear-gradient(135deg, #138aa8 0%, #0f6f89 100%);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(19, 138, 168, 0.2);
+}
+
+.logout-btn:hover {
+  background: linear-gradient(135deg, #0f6f89 0%, #0b5870 100%);
+}
